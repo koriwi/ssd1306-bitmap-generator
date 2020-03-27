@@ -121,9 +121,7 @@ const ImagePreview: React.FC<IProps> = ({
         width={width}
         height={height}
         src={b64Image}
-        onClick={() => (
-          copyToClipboard(hexVal), binary && download(binaryConversion(binary))
-        )}
+        onClick={() => copyToClipboard(hexVal)}
         title="click to copy hex"
       />
       <ControlRow>
